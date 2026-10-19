@@ -1,0 +1,17 @@
+@keyframes float-particle{0%,100%{transform:translate3d(0,0,0);opacity:.15}50%{transform:translate3d(12px,-26px,0);opacity:.55}}
+@keyframes gift-open{0%{transform:scale(1)}40%{transform:scale(1.06);filter:brightness(1.2)}100%{transform:scale(.85) translateY(10px);opacity:0}}
+@keyframes spark-burst{to{transform:scale(3) translateY(-20px);opacity:0}}
+@keyframes orbit-open{to{transform:scale(1.5);opacity:0}}
+@keyframes halo{0%,100%{opacity:.55;scale:.9}50%{opacity:1;scale:1.1}}
+.heart-halo,.heart-rays{pointer-events:none}
+.heart-rays{position:absolute;inset:0;overflow:hidden}
+.heart-rays i{position:absolute;left:50%;top:50%;height:1px;width:45px;transform-origin:0 0;background:linear-gradient(90deg,transparent,#fff,transparent);animation:converge 1.4s var(--ray-delay) both}
+.heart-complete .heart-halo{animation:heart-flash 1.4s both}
+@keyframes converge{0%{transform:rotate(var(--angle)) translateX(190px) scaleX(1.8);opacity:0}30%{opacity:.9}100%{transform:rotate(var(--angle)) translateX(0) scaleX(.1);opacity:0}}
+@keyframes heart-flash{0%{opacity:.7;scale:1}30%{opacity:1;scale:1.9;filter:blur(9px)}100%{opacity:0;scale:2.5;filter:blur(28px)}}
+.final-background{background:radial-gradient(ellipse at 50% 52%,#d68f9e 0%,#e7b0bc 27%,#f2d4d8 53%,#fff8f4 88%)}
+.final-background:after{content:'';position:absolute;inset:-12%;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 35% 38%,#fff8 0%,transparent 53%),radial-gradient(ellipse at 76% 72%,#ffe4cf88 0%,transparent 49%);animation:pastel-drift 16s ease-in-out infinite alternate}
+.final-background .heart-halo{background:radial-gradient(ellipse,#fff7,transparent 68%)}
+@keyframes pastel-drift{from{transform:translate3d(-2%,-1%,0);opacity:.5}to{transform:translate3d(2%,2%,0);opacity:.85}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important}.particles i,.heart-halo{animation:none}.gift-spark,.gift-orbit{animation-duration:.01ms}.primary{transition:none}}
+@media(prefers-reduced-motion:reduce){.final-background:after{animation:none}}

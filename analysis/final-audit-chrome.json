@@ -1,0 +1,45 @@
+{
+  "baseURL": "http://localhost:5174",
+  "results": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "rotationY": 31.41592653589793,
+      "rotationX": 0,
+      "rotationZ": 0,
+      "durationMs": 9997.299999952316,
+      "speedRadPerSecond": 3.141627982746843
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "rotationY": 31.41592653589793,
+      "rotationX": 0,
+      "rotationZ": 0,
+      "durationMs": 10002,
+      "speedRadPerSecond": 3.1416279252743995
+    }
+  ],
+  "warnings": [
+    "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+  ],
+  "consoleErrors": [],
+  "runtimeErrors": [],
+  "responsiveWidths": [
+    320,
+    375,
+    390,
+    430,
+    768,
+    1440
+  ],
+  "autoplayFallback": true,
+  "webGLFallback": true,
+  "missingVideoFallback": true
+}
