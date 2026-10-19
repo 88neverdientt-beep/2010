@@ -2,13 +2,13 @@
 
 React + Vite, Three.js / React Three Fiber, GSAP và Motion. Không cần backend.
 
-## Trải nghiệm trực tuyến
+## Link chạy website
 
 ❤️ **[Mở Love Surprise](https://2010-45474302.vercel.app)**
 
-Mở đường link trên điện thoại hoặc máy tính để trải nghiệm, không cần cài đặt.
+Đường dẫn: https://2010-45474302.vercel.app
 
-**Lưu ý:** tại lần kiểm tra gần nhất, đường link đang yêu cầu đăng nhập Vercel. Trước khi chia sẻ, vào Vercel → Project → Settings → Deployment Protection và điều chỉnh để tên miền này truy cập được công khai; sau đó mở lại bằng cửa sổ ẩn danh để kiểm tra.
+Nếu được yêu cầu đăng nhập Vercel, chủ dự án cần vào **Settings → Deployment Protection** để cho phép truy cập công khai tên miền này trước khi chia sẻ.
 
 ## Chạy bằng VS Code
 
@@ -51,7 +51,7 @@ npm run build
 npm run preview
 ```
 
-Vercel: preset Vite, build `npm run build`, output `dist`. Website đã được triển khai tại [2010-45474302.vercel.app](https://2010-45474302.vercel.app). Netlify: cùng build/output, đã có `netlify.toml`. Three.js được lazy-load; cảnh báo chunk 3D lớn khi build không phải lỗi build.
+Vercel: preset Vite, build `npm run build`, output `dist`. Netlify: cùng build/output, đã có `netlify.toml`. Chưa xuất bản hosting. Three.js được lazy-load; cảnh báo chunk 3D lớn khi build không phải lỗi build.
 
 ## Kiểm tra
 
@@ -64,7 +64,7 @@ E2E yêu cầu dev server đang chạy ở port 5173. Mặc định dùng Chrome
 
 Nếu server dùng cổng khác, đặt `BASE_URL` trước khi chạy kiểm thử. Ví dụ PowerShell: `$env:BASE_URL='http://localhost:5174'`. Báo cáo số đo và console được lưu tại `test-results/final-audit.json`.
 
-Hướng dẫn triển khai Vercel qua GitHub hoặc CLI: [DEPLOY_VERCEL.md](DEPLOY_VERCEL.md). Dự án đã có `vercel.json` và `.vercelignore`.
+Hướng dẫn triển khai Vercel từng bước, không cần GitHub: [DEPLOY_VERCEL.md](DEPLOY_VERCEL.md). Dự án đã có `vercel.json` và `.vercelignore`.
 
 Kiểm tra bao gồm góc quay, chiều quay, tốc độ, video chỉ xuất hiện sau animation, âm thanh, replay, fullscreen, thiếu WebGL, thiếu video và autoplay bị chặn. Screenshot nằm trong `test-results/`. Kiểm tra mobile là viewport Chromium; chưa xác nhận Safari/iOS, Android và màn hình 120Hz thật.
 
